@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .field-group {
+            margin: 1rem;
+            border: 1px solid #666;
+            padding: .5rem;
+        }
+
+        .field-line {
+            display: flex
+        }
+
+        .field-line span {
+            margin: 0.5rem
+        }
+
+        .field-line input {
+            flex: 1
+        }
+    </style>
+</head>
+
+<body>
+    <main role="main">
+        <form action="form-passengers.html">
+            <div class="error-message" hidden="hidden">
+                <p>Indiquez votre date de retour</p>
+                <p>Indiquez votre heure de retour</p>
+            </div>
+            <div class="search">
+                <div class="field-group">
+    
+                    <input type="radio" name="travel-type" id="single" value="AS"> <span class="form-label">Aller simple</span>
+                    <input type="radio" name="travel-type" id="return" value="AR"> <span class="form-label">Aller retour</span>
+                </div>
+                <div class="itinerary field-group">
+                    <h1>Itinéraire</h1>
+                    <p class="field-line">
+                        <span class="form-label">Gare de départ</span>
+                        <input type="text" class="form-input" id="departure">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Gare de'arrivée</span>
+                        <input type="text" class="form-input" id="departure">
+                    </p>
+                </div>
+                <div class="field-group outward-date">
+                    <p class="field-line">
+                        <span class="form-label">Date de départ</span>
+                        <input type="text" class="form-input" id="departure-date" placeholder="JJ/MM/AAAA">
+                        <select name="" id="departure-time">
+                            <option value="">0h</option>
+                            <option value="">1h</option>
+                            <option value="">2h</option>
+                            <option value="">3h</option>
+                            <option value="">4h</option>
+                            <option value="">5h</option>
+                            <option value="">6h</option>
+                            <option value="">7h</option>
+                            <option value="">8h</option>
+                            <option value="">9h</option>
+                            <option value="">10h</option>
+                            <option value="">11h</option>
+                            <option value="">12h</option>
+                            <option value="">13h</option>
+                            <option value="">14h</option>
+                            <option value="">15h</option>
+                            <option value="">16h</option>
+                            <option value="">17h</option>
+                            <option value="">18h</option>
+                            <option value="">19h</option>
+                            <option value="">20h</option>
+                            <option value="">21h</option>
+                            <option value="">22h</option>
+                            <option value="">23h</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="field-group inward-date">
+                    <p class="field-line">
+                        <span class="form-label">Date de retour</span>
+                        <input type="text" class="form-input" placeholder="JJ/MM/AAAA" id="return-date">
+                        <select name="" id="return-time">
+                            <option value="">0h</option>
+                            <option value="">1h</option>
+                            <option value="">2h</option>
+                            <option value="">3h</option>
+                            <option value="">4h</option>
+                            <option value="">5h</option>
+                            <option value="">6h</option>
+                            <option value="">7h</option>
+                            <option value="">8h</option>
+                            <option value="">9h</option>
+                            <option value="">10h</option>
+                            <option value="">11h</option>
+                            <option value="">12h</option>
+                            <option value="">13h</option>
+                            <option value="">14h</option>
+                            <option value="">15h</option>
+                            <option value="">16h</option>
+                            <option value="">17h</option>
+                            <option value="">18h</option>
+                            <option value="">19h</option>
+                            <option value="">20h</option>
+                            <option value="">21h</option>
+                            <option value="">22h</option>
+                            <option value="">23h</option>
+                        </select>
+                    </p>
+                </div>
+    
+                <button>Rechercher</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

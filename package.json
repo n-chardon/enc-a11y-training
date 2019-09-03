@@ -1,0 +1,22 @@
+{
+  "name": "enc-a11y-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-chardon/enc-a11y-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n-chardon/enc-a11y-training/issues"
+  },
+  "homepage": "https://github.com/n-chardon/enc-a11y-training#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

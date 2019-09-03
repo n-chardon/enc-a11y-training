@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .field-group {
+            margin: 1rem;
+            border: 1px solid #666;
+            padding: .5rem;
+        }
+
+        .field-line {
+            display: flex
+        }
+
+        .field-line span {
+            margin: 0.5rem
+        }
+
+        .field-line input {
+            flex: 1
+        }
+    </style>
+</head>
+
+<body>
+    <main role="main">
+        <form action="">
+            <div class="passengers">
+                <h1>Passagers</h1>
+                <div class="field-group">
+                    <p>
+                        Passager 1
+                    </p>
+                    <p class="field-line">
+                            <span class="form-label">Civilité</span>
+                            <select class="form-input" id="pax1-civ">
+                                <option value="">Monsieur</option>
+                                <option value="">Madame</option>
+                            </select>
+                        </p>
+                    <p class="field-line">
+                        <span class="form-label">Nom</span>
+                        <input class="form-input" type="text" id="pax1-name">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Prénom</span>
+                        <input type="text" class="form-label" id="pax1-firstname">
+                    </p>
+                </div>
+                <div class="field-group">
+                    <p>
+                        Passager 2
+                    </p>
+                    <p class="field-line">
+                            <span class="form-label">Civilité</span>
+                            <select class="form-input" id="pax2-civ">
+                                <option value="">Monsieur</option>
+                                <option value="">Madame</option>
+                            </select>
+                        </p>
+                    <p class="field-line">
+                        <span class="form-label">Nom</span>
+                        <input class="form-input" type="text" id="pax2-name">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Prénom</span>
+                        <input type="text" class="form-label" id="pax2-firstname">
+                    </p>
+                </div>
+            </div>
+            <div class="buyer">
+                <h1>Coordonnées de l'acheteur</h1>
+                <div class="field-group">
+                    <p class="field-line">
+                        <span class="form-label">Civilité</span>
+                        <select class="form-input" id="civ">
+                            <option value="">Monsieur</option>
+                            <option value="">Madame</option>
+                        </select>
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Nom</span>
+                        <input class="form-input" type="text" id="pax3-name">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Prénom</span>
+                        <input type="text" class="form-input" id="pax3-firstname">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Adresse</span>
+                        <input type="text" id="adresse">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Code postal</span>
+                        <input type="text" class="form-input" id="cp">
+                    </p>
+                    <p class="field-line">
+                        <span class="form-label">Ville</span>
+                        <input type="text" class="form-input" id="city">
+                    </p>
+    
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
